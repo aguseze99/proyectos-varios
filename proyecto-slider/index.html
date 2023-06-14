@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Slider</title>
+</head>
+<body>
+    <section>
+        <div class="bannerVideo" id="sliderShow">
+            <video src="./images/video-1.mp4" autoplay loop muted class="active"></video>
+            <video src="./images/video-2.mp4" autoplay loop muted></video>
+            <video src="./images/video-3.mp4" autoplay loop muted></video>
+            <video src="./images/video-4.mp4" autoplay loop muted></video>
+            
+        </div>
+        <div class="container">
+            <header id="navBar">
+                <a href="#" class="logo">World</a>
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <span onclick="toggleMenu()" class="menuIcon"></span>
+
+            </header>
+            <div class="content">
+                <div class="bannerText" id="sliderShowText">
+                    <div class="active">
+                        <h2>Tokio</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores beatae suscipit pariatur nam culpa fuga tenetur enim, omnis rerum corrupti expedita aliquid consequatur ipsum incidunt, nisi alias eaque autem.</p>
+                    </div>
+                    <div >
+                        <h2>Paris</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores beatae suscipit pariatur nam culpa fuga tenetur enim, omnis rerum corrupti expedita aliquid consequatur ipsum incidunt, nisi alias eaque autem.</p>
+                    </div>
+                    <div >
+                        <h2>Italia</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores beatae suscipit pariatur nam culpa fuga tenetur enim, omnis rerum corrupti expedita aliquid consequatur ipsum incidunt, nisi alias eaque autem.</p>
+                    </div>
+                    <div >
+                        <h2>México</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam maiores beatae suscipit pariatur nam culpa fuga tenetur enim, omnis rerum corrupti expedita aliquid consequatur ipsum incidunt, nisi alias eaque autem.</p>
+                    </div>
+
+                </div>
+                
+            </div>
+            <ul class="controls">
+                <li onclick="prevSlider();prevSliderText();"><img src="./images/flechitaizquierda-removebg-preview.png" alt="" srcset=""></li>
+                <li onclick="nextSlider();nextSliderText();"><img src="./images/flechitaderecha-removebg-preview.png" alt="" srcset=""></li>
+            </ul>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>
